@@ -8,9 +8,8 @@ on:
 jobs:
   build:
     env:
-      linting: false
-        options:
-          default: true
+      linting: FALSE
+          default: TRUE
     runs-on: ubuntu-latest    
     steps: 
     - if: env.linting == true
