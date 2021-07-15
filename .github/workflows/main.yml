@@ -1,7 +1,7 @@
 name: Deploy to WP Engine
 
 env:
-  YA_WANT_LINTING: true
+  lintingg: true
 
 on:  
   push:
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps: 
-    - if: {{ YA_WANT_LINTING }} == true
+    - if: lintingg|default(true)|bool == true
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
