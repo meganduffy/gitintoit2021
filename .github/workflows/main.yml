@@ -15,7 +15,6 @@ jobs:
         
     steps: 
     - if: YA_WANT_LINTING
-      uses: actions/checkout@v1
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
