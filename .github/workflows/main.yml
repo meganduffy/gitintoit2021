@@ -13,7 +13,7 @@ jobs:
       php_version: 7.3
     steps: 
     - if: env.linting == true
-      uses: StephaneBour/actions-php-lint@7.3
+      uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@main
