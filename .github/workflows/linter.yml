@@ -1,6 +1,0 @@
-name: PHP Syntax Checker (Lint)
-
-  on: push
-  uses: StephaneBour/actions-php-lint@7.4
-  with:
-    dir: './src'
