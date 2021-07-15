@@ -25,6 +25,8 @@ define( 'DB_NAME', 'local' );
 /** MySQL database username */
 define( 'DB_USER', 'root' );
 
+broke
+
 /** MySQL database password */
 define( 'DB_PASSWORD', 'root' );
 
