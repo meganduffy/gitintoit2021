@@ -1,5 +1,7 @@
 name: Deploy to WP Engine
 
+YA_WANT_LINTING: true
+
 on:  
   push:
     branches:
@@ -11,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps: 
+    - if: YA_WANT_LINTING
     - uses: actions/checkout@v1
     - uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
