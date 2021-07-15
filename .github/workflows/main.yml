@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     env:
-      LINTING: true
+      LINTING: false
       php_version: 7.3
     runs-on: ubuntu-latest   
     steps:
