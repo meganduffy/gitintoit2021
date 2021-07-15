@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps: 
-    - if: env.lintingg|default(true)|bool == true
+    - if: env.lintingg|bool == true
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
