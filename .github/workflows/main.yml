@@ -7,14 +7,13 @@ on:
 
 jobs:
   build:
-  
     env:
-      lintingg: false
-
-    runs-on: ubuntu-latest
-        
+      linting: false
+        options:
+          default: true
+    runs-on: ubuntu-latest    
     steps: 
-    - if: env.lintingg == true
+    - if: env.linting == true
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
