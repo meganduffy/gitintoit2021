@@ -8,12 +8,11 @@ on:
 jobs:
   build:
     env:
-      LINTING: false
+      LINTING: true
       php_version: 7.3
     runs-on: ubuntu-latest   
     steps:
-    - if: ${{env.LINTING}} == true
-      uses: michaelw90/PHP-Lint@master
+    - uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@main
