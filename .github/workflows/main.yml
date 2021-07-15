@@ -1,6 +1,7 @@
 name: Deploy to WP Engine
 
-YA_WANT_LINTING: true
+env:
+  YA_WANT_LINTING: true
 
 on:  
   push:
