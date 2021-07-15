@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps: 
-    - if: $YA_WANT_LINTING
+    - if: {{ YA_WANT_LINTING }}
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
