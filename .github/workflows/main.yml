@@ -11,7 +11,7 @@ jobs:
       linting: TRUE
     runs-on: ubuntu-latest    
     steps: 
-    - if: env.linting == true
+    - if: env.linting == TRUE
       uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
