@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
         
     steps: 
+    - uses: actions/checkout@v1
+    - uses: michaelw90/PHP-Lint@master
     - uses: actions/checkout@v2
     - name: GitHub Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@main
