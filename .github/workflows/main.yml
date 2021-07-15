@@ -9,7 +9,7 @@ jobs:
   build:
     env:
       linting: FALSE
-          default: 'TRUE'
+        default: TRUE
     runs-on: ubuntu-latest    
     steps: 
     - if: env.linting == true
